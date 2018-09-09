@@ -1,0 +1,18 @@
+opam-version: "2.0"
+name: "oct"
+version: "~dev"
+synopsis: "Oucometree utilities"
+maintainer: "Drup <drupyog@zoho.com>"
+authors: "Drup <drupyog@zoho.com>"
+license: "ICS"
+homepage: ""
+bug-reports: ""
+depends: ["fmt"]
+build: [
+  ["dune" "subst"] {pinned}
+  ["dune" "build" "-p" name "-j" jobs]
+]
+dev-repo: "git+https://"
+url {
+  src: "file:///home/gabriel/Sources/oct"
+}

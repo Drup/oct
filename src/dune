@@ -1,0 +1,7 @@
+(library
+ (name        oct)
+ (public_name oct)
+ (synopsis  "Utitilies to print Outcometree")
+ (libraries fmt visitors.runtime compiler-libs.common)
+ (preprocess (pps visitors.ppx))
+)
